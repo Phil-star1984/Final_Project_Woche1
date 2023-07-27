@@ -8,12 +8,13 @@ body {
 
 .wrapper {
   width: 1024px;
-  background-color: #151f30;
+  background-color: #29193d;
   border-radius: 15px;
   margin: 0 auto;
 }
 
 header {
+  margin-top: 10%;
   background-color: #0593a2;
   border-radius: 15px;
 }
@@ -29,31 +30,56 @@ header .brand {
 header .brand span {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    color: white;
+  color: white;
   font-size: 1.2rem;
 }
 
-#hero {
-    min-height: 400px;
-    background: coral url("./blog_post.png") center no-repeat;
-
+#blogContent {
+  width: 100%;
 }
 
-article {
+#hero {
+  margin: 1.5em;
+  border-radius: 15px;
+  padding: 4em;
+  height: 300px;
+  background: coral url("./blog_post.png") center no-repeat;
+}
+
+#posts {
+  padding: 1.5em;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+
+  flex-wrap: wrap;
+}
+
+#posts article {
   width: 70%;
   background-color: #ff7a48;
   border-radius: 15px;
+  padding: 1.5em;
+  margin-bottom: 1em;
+  margin-right: 1em;
 }
 
-aside {
-  width: 30%;
+#posts aside {
+  width: 10%;
   background-color: #e3371e;
   border-radius: 15px;
-  padding: 15px;
+  height: 100px;
+  padding: 1rem;
+}
+
+h2,
+h3 {
+  margin: 0;
 }
 
 ul {
   list-style: none;
+  padding: 0px;
 }
 
 footer {
@@ -61,4 +87,20 @@ footer {
   text-align: center;
   padding: 8px;
   border-radius: 15px;
+  clear: both;
+  color: #ff7a48;
+}
+
+article a {
+  color: #e3371e;
+  text-decoration: none;
+}
+
+aside a {
+  color: coral;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0593a2;
 }
