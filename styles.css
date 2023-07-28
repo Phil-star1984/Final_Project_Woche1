@@ -11,12 +11,14 @@ body {
   background-color: #29193d;
   border-radius: 15px;
   margin: 0 auto;
+  box-shadow: 0 4px 20px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 header {
   margin-top: 10%;
   background-color: #0593a2;
   border-radius: 15px;
+
 }
 
 header .brand {
@@ -24,7 +26,7 @@ header .brand {
   text-align: center;
   padding: 15px;
   font-size: 3rem;
-  color: #ff7a48;
+  color: #86f1fc;
 }
 
 header .brand span {
@@ -38,6 +40,7 @@ header .brand span {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  
 }
 
 #hero {
@@ -61,7 +64,6 @@ header .brand span {
   border-radius: 15px;
   padding: 1.5em;
   margin-bottom: 1.5em;
-
 }
 
 aside {
@@ -70,7 +72,6 @@ aside {
   border-radius: 15px;
   padding: 1.5em;
   margin-bottom: 1.5em;
-  
 }
 
 h2,
@@ -104,9 +105,55 @@ article a {
 aside a {
   color: coral;
   text-decoration: none;
-
 }
 
 a:hover {
   color: #0593a2;
+  background-color: #29193d;
+  border-radius: 5px;
+  padding: 2px 4px;
 }
+
+p::selection {
+  color: #ff7a48;
+  background-color: #0593a2;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+
+  .wrapper {
+    width: 600px;
+  }
+
+  #posts {
+    width: 70%;
+    padding: 1.5em;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  #posts article {
+    background-color: #ff7a48;
+    border-radius: 15px;
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+  }
+  
+  aside {
+    width: 10%;
+    background-color: #e3371e;
+    border-radius: 15px;
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+  }
+
+  article {
+    max-height: 220px;
+  }
+
+
+
+  /* Hier stehen die CSS Anweisungen für die Bildschirmausgabe */
+  }
