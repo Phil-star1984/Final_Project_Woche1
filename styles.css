@@ -36,9 +36,12 @@ header .brand span {
 
 #blogContent {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #hero {
+  width: 100%;
   margin: 1.5em;
   border-radius: 15px;
   padding: 4em;
@@ -47,29 +50,27 @@ header .brand span {
 }
 
 #posts {
+  width: 70%;
   padding: 1.5em;
   padding-top: 0;
   padding-bottom: 0;
-  display: flex;
-
-  flex-wrap: wrap;
 }
 
 #posts article {
-  width: 70%;
   background-color: #ff7a48;
   border-radius: 15px;
   padding: 1.5em;
-  margin-bottom: 1em;
-  margin-right: 1em;
+  margin-bottom: 1.5em;
+
 }
 
-#posts aside {
-  width: 10%;
+aside {
+  width: 18%;
   background-color: #e3371e;
   border-radius: 15px;
-  height: 100px;
-  padding: 1rem;
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  
 }
 
 h2,
@@ -80,6 +81,10 @@ h3 {
 ul {
   list-style: none;
   padding: 0px;
+}
+
+li {
+  margin: 8px 0;
 }
 
 footer {
@@ -99,6 +104,7 @@ article a {
 aside a {
   color: coral;
   text-decoration: none;
+
 }
 
 a:hover {
